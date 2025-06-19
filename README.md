@@ -33,24 +33,36 @@
 
 ## 🛠️ Implementasi dan Kode Program
 **- Rust Modbust Client**
-  let payload = json!({
-    "timestamp": timestamp.to_rfc3339_opts(SecondsFormat::Secs, true),
-    "sensor_id": sensor_id,
-    "location": location,
-    "process_stage": process_stage,
-    "temperature_celsius": temperature,
-    "humidity_percent": humidity
-});
+async fn send_to_server(
+    sensor_id: &str,
+    location: &str,
+    process_stage: &str,
+    temperature: f32,
+    humidity: f32,
+    timestamp: chrono::DateTime<Local>,
+) -> Result<(), Box<dyn Error>> {
+    let mut stream = TcpStream::connect("127.0.0.1:7878").await?;
+    
+    let payload = json!({
+        "timestamp": timestamp.to_rfc3339_opts(SecondsFormat::Secs, true),
+        "sensor_id": sensor_id,
+        "location": location,
+        "process_stage": process_stage,
+        "temperature_celsius": temperature,
+        "humidity_percent": humidity
+    });
 
-let json_str = payload.to_string();
-println!("Sending JSON: {}", json_str);
+    let json_str = payload.to_string();
+    println!("Sending JSON: {}", json_str);
+    
+    stream.write_all(json_str.as_bytes()).await?;
+    let mut buf = [0; 1024];
+    let n = stream.read(&mut buf).await?;
+    println!("Server response: {}", std::str::from_utf8(&buf[..n])?);
+    
+    Ok(())
+}
 
-stream.write_all(json_str.as_bytes()).await?;
-let mut buf = [0; 1024];
-let n = stream.read(&mut buf).await?;
-println!("Server response: {}", std::str::from_utf8(&buf[..n])?);
-
-Ok(())
   
 **- TCP Server**
   

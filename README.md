@@ -160,13 +160,16 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ---
 
-## 🚀 Cara Menggunak
 
-## 📚 Tutorial Setup Program 
+## 📚 Pengujian 
+**- Hasil Pembacaan Suhu dan Kelembapan selama proses Inkubasi**
+**- Hasil penyimpanan di InfluxDB.**
+**- Visualisasi data Real-time dashboard di Grafana.**
+
 
 ---
 
-## 📚 Tutorial Setup Program 
+## 📚 Analisa Hasil Pengujian
  
 ---
 

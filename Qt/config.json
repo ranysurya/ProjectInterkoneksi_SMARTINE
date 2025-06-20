@@ -1,0 +1,12 @@
+{
+    "tcp_host": "127.0.0.1",
+    "tcp_port": 7878,
+    "min_temp": 24.0,
+    "max_temp": 30.0,
+    "min_humid": 50.0,
+    "max_humid": 70.0,
+    "influx_url": "http://localhost:8086",
+    "influx_token": "hkyHqP236AVjN2JL84XYNJVPWCDXnC756c1Gxc2CO6n_nkG-dCTLB3Ik-c761g3YRqasOSGRZrOandYZhN8QrQ==",
+    "influx_org": "Institute Teknologi Sepuluh Nopember",
+    "influx_bucket": "telur_monitoring_db"
+}

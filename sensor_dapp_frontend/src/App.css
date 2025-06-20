@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding-bottom: 50px;
+}
+
+.App-header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+.status {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.status .connected {
+  color: #28a745;
+}
+
+.status .disconnected {
+  color: #dc3545;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #ffe0e0;
+  border: 1px solid #dc3545;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  max-width: 600px;
+  word-wrap: break-word;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.refresh-button {
+  background-color: #28a745;
+}
+
+button.refresh-button:hover {
+  background-color: #218838;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px; /* Lebar maksimum main disesuaikan untuk layout vertikal */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* --- Gaya Baru untuk Kontainer Tabel dan Grafik --- */
+.data-container {
+  display: flex;
+  flex-direction: column; /* Mengubah arah Flexbox menjadi kolom (vertikal) */
+  align-items: center;   /* Pusatkan item secara horizontal */
+  gap: 30px; /* Jarak vertikal antar grafik dan tabel */
+}
+
+.table-wrapper {
+  width: 100%; /* Agar tabel mengambil lebar penuh kontainernya */
+  max-width: 900px; /* Batasi lebar maksimum tabel */
+  overflow-x: auto; 
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  order: 2; /* Menempatkan tabel di urutan kedua (di bawah grafik) */
+}
+
+.chart-wrapper {
+  width: 100%; /* Agar grafik mengambil lebar penuh kontainernya */
+  max-width: 900px; /* Batasi lebar maksimum grafik */
+  height: 400px; /* Tinggi grafik */
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  order: 1; /* Menempatkan grafik di urutan pertama (di atas tabel) */
+}
+
+.chart-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* --- Akhir Gaya Baru --- */
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: left;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #555;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #eef;
+}

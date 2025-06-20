@@ -1,0 +1,23 @@
+[package]
+name = "tcp_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+influxdb2 = "0.5.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+futures = "0.3"
+
+# Dependensi untuk Web3 (aplikasi utama)
+ethers = { version = "2.0.12", features = ["abigen", "ws", "rustls", "legacy"] }
+dotenv = "0.15"
+hex = "0.4"
+
+# --- Dependensi untuk BUILD SCRIPT (`build.rs`) ---
+[build-dependencies]
+ethers = { version = "2.0.12", features = ["abigen", "ws", "rustls", "legacy"] } # Perhatikan: Ini untuk build.rs
+serde_json = "1.0" # Untuk membaca ABI JSON di build.rs
+serde = { version = "1.0", features = ["derive"] } # Karena serde_json butuh ini

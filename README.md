@@ -2,7 +2,7 @@
 
 
 ## 📘 Deskripsi Proyek
-**Smartine adalah** sistem monitoring suhu 🌡️ dan kelembapan 💧 pada mesin penetas telur ayam yang dapat dipantau secara real-time 📲. Dirancang untuk membantu peternak rumahan, **alat ini menjaga kestabilan inkubasi** agar proses penetasan lebih **efisien** **dan akurat**. **Dengan sensor digital (SHT), pencatatan data otomatis, dan tampilan visual yang informatif, peternak dapat meningkatkan tingkat keberhasilan menetas dan mempercepat waktu panen.** Inovasi ini juga mendorong adopsi teknologi di sektor peternakan 💼 serta membuka peluang kolaborasi bagi mahasiswa dan pengembang 🎓 dalam menghadirkan solusi berbasis data dan teknologi terkini 📡. Dari sisi bisnis, sistem ini memberikan solusi yang ekonomis namun berdampak besar. Peternak dapat meningkatkan jumlah telur yang berhasil menetas 🐣, mempercepat siklus panen, dan meningkatkan daya saing di pasar lokal maupun nasional.
+**Smartine adalah** sistem monitoring suhu dan kelembapan pada mesin penetas telur ayam yang dapat dipantau secara real-time. Dirancang untuk membantu peternak rumahan, **alat ini menjaga kestabilan inkubasi** agar proses penetasan lebih **efisien** **dan akurat**. **Dengan sensor digital (SHT), pencatatan data otomatis, dan tampilan visual yang informatif, peternak dapat meningkatkan tingkat keberhasilan menetas dan mempercepat waktu panen.** Inovasi ini juga mendorong adopsi teknologi di sektor peternakan serta membuka peluang kolaborasi bagi mahasiswa dan pengembang dalam menghadirkan solusi berbasis data dan teknologi terkini. Dari sisi bisnis, sistem ini memberikan solusi yang ekonomis namun berdampak besar. Peternak dapat meningkatkan jumlah telur yang berhasil menetas, mempercepat siklus panen, dan meningkatkan daya saing di pasar lokal maupun nasional.
 
 ---
 
@@ -23,9 +23,9 @@
 ---
 
 ## ⚙️ Fitur Utama
-- ✅ Monitoring Suhu & Kelembaban Real-Time 🌡️💧
-- ✅ Penyimpanan Data Historis 🕒
-- ✅ Visualisasi Data 📊
+- ✅ Monitoring Suhu & Kelembaban Real-Time 
+- ✅ Penyimpanan Data Historis 
+- ✅ Visualisasi Data 
 - ✅ Blockchain-based Data Logging, untuk Menjamin keaslian & keamanan data inkubasi
 
 
@@ -183,10 +183,10 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ---
 
 ## 📌 Saran untuk Pengembangan Selanjutnya
-- Integrasi Kecerdasan Buatan (AI) untuk Prediksi dan Optimasi Penetasan 🤖
-- Fitur Prediksi Waktu Tetas Otomatis ⏳
-- Integrasi Kamera Mini untuk Pemantauan Visual 📷
-- Fitur Marketplace Internal 🛒
+- Integrasi Kecerdasan Buatan (AI) untuk Prediksi dan Optimasi Penetasan 
+- Fitur Prediksi Waktu Tetas Otomatis 
+- Integrasi Kamera Mini untuk Pemantauan Visual 
+- Fitur Marketplace Internal 
 
 ---
 
@@ -196,5 +196,5 @@ SMARTINE_TEKINS23_ITS
 ---
 
 > 🚀 “Tetas Lebih Cerdas, Panen Lebih Cepat!, Smartine: Awal Cerdas untuk Anak Ayam Berkualitas.”  
-> — Tim Smartine
+> Tim Smartine
 

@@ -21,6 +21,14 @@
 
 
 ---
+## 👨‍💻 Anggota Kelompok
+| Topik, Penulis, dan Tahun | Teknologi yang Digunakan | Hasil|
+|------|-----|-----|
+| [Sistem Monitoring Suhu Pada Inkubator Penetas Telur Berbasis IoT. Yunus et al. (2024)] | [Sensor DHT11, NodeMCU ESP8266, platform Blynk] |[Sistem efektif dalam meningkatkan kualitas penetasan telur dan efisiensi pemantauan] |
+| [Sistem Monitoring Suhu Pada Inkubator Penetas Telur Berbasis IoT. Yunus et al. (2024)] | [Sensor DHT11, NodeMCU ESP8266, platform Blynk] |[Sistem efektif dalam meningkatkan kualitas penetasan telur dan efisiensi pemantauan] |
+| [Sistem Monitoring Suhu Pada Inkubator Penetas Telur Berbasis IoT. Yunus et al. (2024)] | [Sensor DHT11, NodeMCU ESP8266, platform Blynk] |[Sistem efektif dalam meningkatkan kualitas penetasan telur dan efisiensi pemantauan] |
+
+---
 
 ## ⚙️ Fitur Utama
 - ✅ Monitoring Suhu & Kelembaban Real-Time 

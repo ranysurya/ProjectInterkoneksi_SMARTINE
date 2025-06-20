@@ -25,8 +25,8 @@
 | Topik, Penulis, dan Tahun | Teknologi yang Digunakan | Hasil|
 |------|-----|-----|
 | Sistem Monitoring Suhu Pada Inkubator Penetas Telur Berbasis IoT. Yunus et al. (2024) | Sensor DHT11, NodeMCU ESP8266, platform Blynk |Sistem efektif dalam meningkatkan kualitas penetasan telur dan efisiensi pemantauan |
-| Sistem Monitoring Suhu Pada Inkubator Penetas Telur Berbasis IoT. Yunus et al. (2024)| Sensor DHT11, NodeMCU ESP8266, platform Blynk |Sistem efektif dalam meningkatkan kualitas penetasan telur dan efisiensi pemantauan|
-| Sistem Monitoring Suhu Pada Inkubator Penetas Telur Berbasis IoT. Yunus et al. (2024) | Sensor DHT11, NodeMCU ESP8266, platform Blynk |Sistem efektif dalam meningkatkan kualitas penetasan telur dan efisiensi pemantauan |
+| Monitoring Inkubator Telur Menggunakan Protokol ESP-MESH. Asyam & Purwoto (2024)| ESP32 & ESP8266, sensor SHTC3, protokol ESP-MESH, platform Thinger.io |Akurasi tinggi (error suhu 0,79%, kelembapan 7,69%), sistem efisien untuk banyak inkubator|
+| Sistem Monitoring Suhu dan Kelembaban Berbasis IoT pada Ruang Data Center. Kusumah et al. (2023) | Sensor DHT11, NodeMCU ESP8266, OLED I2C, MQTT, dashboard web |Error suhu 1,7%, kelembapan 2,1%, sistem stabil dan efisien |
 
 ---
 

@@ -41,34 +41,25 @@
 ## ⚙️ Tutorial Run Program
 1.	Langkah pertama adalah menjalankan layanan berbasis Node.js. 
 2.	Buka terminal atau command prompt, lalu arahkan direktori kerja ke folder project Node menggunakan perintah cd Dokuments/ISI. ![image](https://github.com/user-attachments/assets/c0c5cabd-0944-40d8-bf00-b3c86ac254ac)
-
 3.	Setelah itu, jalankan program dengan perintah node index.js atau gunakan node start_dev_env jika script sudah didefinisikan dalam file package.json. ![image](https://github.com/user-attachments/assets/5dd11cdb-2ce3-4f7f-ba15-90a08b1190ab)
-
 4.	Jika sudah maka akan tertulis Hardhat node dan deploy selesai. Biarkan terminal ini terbuka untu Hardhat node
 5.	Selanjutnya, jalankan program TCP server yang ditulis menggunakan bahasa pemrograman Rust. 
 6.	Buka terminal baru agar proses sebelumnya tetap berjalan
 7.	Kemudian arahkan direktori ke folder proyek TCP server, cd telur_tcp_server/ ![image](https://github.com/user-attachments/assets/7ad6b1b2-a6f2-4ac2-9199-99fa91553d8d)
-
 8.	Setelah berada di direktori yang benar, jalankan program dengan perintah cargo run. Program ini akan memulai server TCP untuk menerima dan mengelola koneksi dari client.
 9.	Setelah TCP server berjalan, lanjutkan dengan menjalankan program Modbus yang juga dibuat dengan Rust. ![image](https://github.com/user-attachments/assets/4401ec7b-808b-448c-8e00-9ac21c816903)
-
 10.	Buka terminal baru kembali, lalu pindah ke folder project Modbus dengan perintah cd modbus_client/. Jalankan program ini menggunakan perintah cargo run, yang akan menginisialisasi komunikasi protokol Modbus.
 11.	Berikutnya, jalankan antarmuka pengguna (GUI) yang dikembangkan menggunakan Python dan framework Qt. 
 12.	Buka terminal baru, arahkan direktori kerja ke folder GUI, cd Qt/. ![image](https://github.com/user-attachments/assets/10db9954-a794-4ef9-851d-a2ca0d7ff42f)
-
 13.	Sebelum menjalankan program, aktifkan virtual environment dengan perintah source venv_coffe/bin/activate, yang akan mengatur lingkungan Python agar sesuai dengan dependensi yang telah disiapkan. 
 14.	Lakukan install influx db client dengan sourse pip install influxdb-client ![image](https://github.com/user-attachments/assets/1647459e-880b-45c5-a7ef-a1f36741b66a)
-
 15.	Sebelum melakukan perintah ke python, tulis source pip install PyQt5 untuk menginstall 
 16.	Setelah environment aktif, jalankan file utama GUI dengan perintah python3 main.py. sebelum itu install pyqtgraph ![image](https://github.com/user-attachments/assets/bdaac3ef-9203-4f4b-b813-2a4c966dfd3f)
-
 17.	Terakhir, jalankan tampilan web (frontend) berbasis Node.js
 18.	Buka terminal baru lagi, lalu pindah ke direktori project web frontend menggunakan perintah cd sensor_dapp_frontend/ ![image](https://github.com/user-attachments/assets/a077faa1-2d3f-4635-8cdf-cd169a3373f2)
-
 19.	Setelah itu, aktifkan mode pengembangan dengan perintah node npm run dev yang akan memulai server lokal dan menampilkan antarmuka web yang terhubung dengan backend dan sistem lainnya.
 20.	Dari local host yang tertera, buka firefox dan search laman http://localhost:5173/
 21.	Maka akan tertampil sebagai berikut ![image](https://github.com/user-attachments/assets/5dbffc6a-e368-4a6b-823c-99f5bf9c0108)
-
 22.	Jika ingin menghubungkan ke metamask, klik pada extension di dalam firefox lalu klik pada Metamask untuk menghubungkan blockchain
 23.	Setelah itu klik pada tampilan kiri, Lalu klik ‘add a custom network’ 
 24.	Lalu sesuaikan dengan localhost dan klik save

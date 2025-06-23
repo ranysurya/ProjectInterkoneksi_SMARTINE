@@ -38,6 +38,45 @@
 
 ---
 
+## ⚙️ Tutorial Run Program
+1.	Langkah pertama adalah menjalankan layanan berbasis Node.js. 
+2.	Buka terminal atau command prompt, lalu arahkan direktori kerja ke folder project Node menggunakan perintah cd Dokuments/ISI. ![image](https://github.com/user-attachments/assets/c0c5cabd-0944-40d8-bf00-b3c86ac254ac)
+
+3.	Setelah itu, jalankan program dengan perintah node index.js atau gunakan node start_dev_env jika script sudah didefinisikan dalam file package.json. ![image](https://github.com/user-attachments/assets/5dd11cdb-2ce3-4f7f-ba15-90a08b1190ab)
+
+4.	Jika sudah maka akan tertulis Hardhat node dan deploy selesai. Biarkan terminal ini terbuka untu Hardhat node
+5.	Selanjutnya, jalankan program TCP server yang ditulis menggunakan bahasa pemrograman Rust. 
+6.	Buka terminal baru agar proses sebelumnya tetap berjalan
+7.	Kemudian arahkan direktori ke folder proyek TCP server, cd telur_tcp_server/ ![image](https://github.com/user-attachments/assets/7ad6b1b2-a6f2-4ac2-9199-99fa91553d8d)
+
+8.	Setelah berada di direktori yang benar, jalankan program dengan perintah cargo run. Program ini akan memulai server TCP untuk menerima dan mengelola koneksi dari client.
+9.	Setelah TCP server berjalan, lanjutkan dengan menjalankan program Modbus yang juga dibuat dengan Rust. ![image](https://github.com/user-attachments/assets/4401ec7b-808b-448c-8e00-9ac21c816903)
+
+10.	Buka terminal baru kembali, lalu pindah ke folder project Modbus dengan perintah cd modbus_client/. Jalankan program ini menggunakan perintah cargo run, yang akan menginisialisasi komunikasi protokol Modbus.
+11.	Berikutnya, jalankan antarmuka pengguna (GUI) yang dikembangkan menggunakan Python dan framework Qt. 
+12.	Buka terminal baru, arahkan direktori kerja ke folder GUI, cd Qt/. ![image](https://github.com/user-attachments/assets/10db9954-a794-4ef9-851d-a2ca0d7ff42f)
+
+13.	Sebelum menjalankan program, aktifkan virtual environment dengan perintah source venv_coffe/bin/activate, yang akan mengatur lingkungan Python agar sesuai dengan dependensi yang telah disiapkan. 
+14.	Lakukan install influx db client dengan sourse pip install influxdb-client ![image](https://github.com/user-attachments/assets/1647459e-880b-45c5-a7ef-a1f36741b66a)
+
+15.	Sebelum melakukan perintah ke python, tulis source pip install PyQt5 untuk menginstall 
+16.	Setelah environment aktif, jalankan file utama GUI dengan perintah python3 main.py. sebelum itu install pyqtgraph ![image](https://github.com/user-attachments/assets/bdaac3ef-9203-4f4b-b813-2a4c966dfd3f)
+
+17.	Terakhir, jalankan tampilan web (frontend) berbasis Node.js
+18.	Buka terminal baru lagi, lalu pindah ke direktori project web frontend menggunakan perintah cd sensor_dapp_frontend/ ![image](https://github.com/user-attachments/assets/a077faa1-2d3f-4635-8cdf-cd169a3373f2)
+
+19.	Setelah itu, aktifkan mode pengembangan dengan perintah node npm run dev yang akan memulai server lokal dan menampilkan antarmuka web yang terhubung dengan backend dan sistem lainnya.
+20.	Dari local host yang tertera, buka firefox dan search laman http://localhost:5173/
+21.	Maka akan tertampil sebagai berikut ![image](https://github.com/user-attachments/assets/5dbffc6a-e368-4a6b-823c-99f5bf9c0108)
+
+22.	Jika ingin menghubungkan ke metamask, klik pada extension di dalam firefox lalu klik pada Metamask untuk menghubungkan blockchain
+23.	Setelah itu klik pada tampilan kiri, Lalu klik ‘add a custom network’ 
+24.	Lalu sesuaikan dengan localhost dan klik save
+25.	kemudian klik panah ke bawah di sebelah account, lalu klik ‘add account or hardware wallet, lalu klik private keys, Kemudian isikan Private Keys dan klik import.
+26.	Kemudian klik ‘muat data sensor’ pada halaman Web3, kemudian akan muncul tampilan dari extension metamask. Kemudian klik connect maka tampilan dari Web3 akan menampilkan tabel dari data yang telah dikirimkan ke TCP Server
+
+---
+
 ## 🛠️ Implementasi dan Kode Program
 **- Rust Modbust Client**
 async fn send_to_server(
@@ -167,19 +206,22 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ---
 
-
-## 📚 Pengujian 
-**- Hasil Pembacaan Suhu dan Kelembapan selama proses Inkubasi**
-**- Hasil penyimpanan di InfluxDB.**
-**- Visualisasi data Real-time dashboard di Grafana.**
-
-
----
-
 ## 📚 Analisa Hasil Pengujian
- 
----
+ ![image](https://github.com/user-attachments/assets/498bc7ef-a226-4001-aea5-644eccb75d73)
+![image](https://github.com/user-attachments/assets/6c94d5af-c500-4c18-bc37-be5584ea7a33)
+Gambar tersebut menyajikan dokumentasi hasil pembacaan suhu dan kelembaban selama proses inkubasi yang berlangsung. Data tersebut ditampilkan dalam bentuk hasil penyimpanan di database time-series InfluxDB dan tampilan real-time dashboard pada platform visualisasi Grafana. Pada InfluxDB menunjukkan bahwa data berhasil direkam secara berkala dengan struktur timestamp, field value, dan tag yang merepresentasikan parameter suhu dan kelembaban dari sensor. Sementara itu, pada dashboard Grafana terlihat grafik dinamis yang merekam perubahan nilai suhu dan kelembaban sepanjang waktu, memungkinkan pengguna untuk melakukan pemantauan secara langsung.
+Berdasarkan analisis terhadap grafik dan data yang ditampilkan, nilai suhu selama proses inkubasi umumnya berada pada rentang 25–29 °C, sedangkan kelembaban berkisar antara 55–68%. Hal ini menunjukkan bahwa kedua parameter tersebut berada dalam rentang optimal yang direkomendasikan, yaitu 24–30 °C untuk suhu dan 50–70% untuk kelembaban. Kondisi ini dianggap stabil dan sesuai untuk mendukung proses inkubasi, sehingga peluang keberhasilan penetasan telur atau pertumbuhan biologis dalam ruang inkubasi dapat dikatakan tinggi.
+![image](https://github.com/user-attachments/assets/fdc2ca8f-93c5-4b0e-ab68-5478283dd8d1)
+![image](https://github.com/user-attachments/assets/47fe8f9c-11c2-4975-a372-849d837722cf)
 
+---
+##  Kesimpulan
+1.	Proyek ini berhasil merancang dan mengimplementasikan sistem pemantauan suhu dan kelembaban berbasis Internet of Things (IoT) menggunakan sensor SHT20 dan protokol Modbus RTU yang diolah oleh Modbus client berbasis Rust. Data yang dibaca dikirimkan melalui TCP server dan disimpan dalam InfluxDB, lalu divisualisasikan secara real-time melalui dashboard Grafana dan antarmuka Qt.
+2.	Arsitektur sistem berhasil mengintegrasikan berbagai komponen secara modular dan berlapis, mulai dari sensor, pemrosesan data, penyimpanan basis data, hingga visualisasi pada platform web dan GUI Python. Penggunaan Rust memberikan efisiensi dan keandalan tinggi dalam komunikasi data TCP dan proses parsing JSON.
+3.	Berdasarkan hasil pengujian, suhu selama proses inkubasi berkisar antara 25–29 °C dan kelembaban 55–68%, yang keduanya berada dalam rentang optimal yang direkomendasikan untuk proses inkubasi telur (suhu 24–30 °C dan kelembaban 50–70%). Hal ini menunjukkan bahwa sistem mampu menjalankan fungsinya secara akurat dan konsisten dalam mendukung proses biologis.
+4.	Dashboard Grafana dan GUI Python Qt mampu menyajikan grafik waktu nyata yang memudahkan pengguna dalam memantau tren suhu dan kelembaban secara historis maupun saat ini, sekaligus memungkinkan interaksi berbasis Web3 melalui integrasi dengan Metamask.
+
+---
 ## 🖼️ Dokumentasi 
 
 📹 PPT : https://its.id/m/PPTProjectISISmartine_Kelompok3  

@@ -180,11 +180,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
  
 ---
 
-## 🖼️ Dokumentasi dan Demo
+## 🖼️ Dokumentasi 
 
-📹 Tonton video demo: 
+📹 PPT : https://its.id/m/PPTProjectISISmartine_Kelompok3  
 
-📷 Lihat dokumentasi foto di folder
+📷 Laporan : https://its.id/m/LaporanAkhirProjectInterkoneksi_Kelompok3 
 
 
 ---

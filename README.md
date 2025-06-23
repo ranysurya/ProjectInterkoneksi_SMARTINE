@@ -41,7 +41,7 @@
 ## ⚙️ Tutorial Run Program
 1.	Langkah pertama adalah menjalankan layanan berbasis Node.js. 
 2.	Buka terminal atau command prompt, lalu arahkan direktori kerja ke folder project Node menggunakan perintah cd Dokuments/ISI. ![image](https://github.com/user-attachments/assets/c0c5cabd-0944-40d8-bf00-b3c86ac254ac)
-3.	Setelah itu, jalankan program dengan perintah node index.js atau gunakan node start_dev_env jika script sudah didefinisikan dalam file package.json. ![image](https://github.com/user-attachments/assets/5dd11cdb-2ce3-4f7f-ba15-90a08b1190ab)
+3.	Setelah itu, jalankan program dengan perintah node index.js atau gunakan node start_dev_env jika script sudah didefinisikan dalam file package.json.                     ![image](https://github.com/user-attachments/assets/5dd11cdb-2ce3-4f7f-ba15-90a08b1190ab)
 4.	Jika sudah maka akan tertulis Hardhat node dan deploy selesai. Biarkan terminal ini terbuka untu Hardhat node
 5.	Selanjutnya, jalankan program TCP server yang ditulis menggunakan bahasa pemrograman Rust. 
 6.	Buka terminal baru agar proses sebelumnya tetap berjalan
